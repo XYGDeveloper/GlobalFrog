@@ -1,0 +1,37 @@
+//
+//  Qqw-Prefix.pch
+//  Qqw
+//
+//  Created by gao.jian on 16/5/27.
+//  Copyright © 2016年 quanqiiwa. All rights reserved.
+//
+
+#ifndef Qqw_Prefix_pch
+#define Qqw_Prefix_pch
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//常用颜色宏定义
+#define AppStyleColor HexColor(0x5cb531) //主题绿色
+#define DividerGrayColor HexColor(0xe1e1e1) //灰色分隔线颜色
+#define DividerDarkGrayColor HexColor(0xd6d7dc) //深灰色分隔线
+#define DefaultBackgroundColor HexColor(0xf3f3f3) //默认背景色
+#define PriceColor HexColor(0xd63d3e) //默认背景色
+
+#define BK_Color @"0x5e972b"
+
+#define MSG_color @"D5E7CC"
+
+#define MONEY_Color @"d63d3e"
+
+#ifdef __OBJC__
+
+#import "CommonHeader.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Qqw-Swift.h"
+#import "LocationManager.h"
+#import "MyAlertView.h"
+#endif
+
+#endif /* Qqw_Prefix_pch */

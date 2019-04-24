@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="MessgeLeftTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="484" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xlc-Jc-ILp">
+                        <rect key="frame" x="13" y="13" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="5UN-0K-4hI"/>
+                            <constraint firstAttribute="width" secondItem="xlc-Jc-ILp" secondAttribute="height" multiplier="1:1" id="bcv-kl-bGi"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_recive_press_pic" translatesAutoresizingMaskIntoConstraints="NO" id="2mO-cA-IPx">
+                        <rect key="frame" x="76" y="21" width="63" height="34"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4z-NK-Ebx">
+                        <rect key="frame" x="93" y="30" width="38" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1A-63-IfG">
+                        <rect key="frame" x="227" y="3" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="s4z-NK-Ebx" firstAttribute="leading" secondItem="xlc-Jc-ILp" secondAttribute="trailing" constant="30" id="Bxw-tT-7Y6"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s4z-NK-Ebx" secondAttribute="trailing" constant="30" id="KJ9-PJ-3K9"/>
+                    <constraint firstItem="h1A-63-IfG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="KzF-dd-VOo"/>
+                    <constraint firstItem="s4z-NK-Ebx" firstAttribute="height" secondItem="2mO-cA-IPx" secondAttribute="height" constant="-16" id="QEv-N5-RnA"/>
+                    <constraint firstItem="xlc-Jc-ILp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="QFF-kj-8jT"/>
+                    <constraint firstItem="xlc-Jc-ILp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Uz8-9x-Fpx"/>
+                    <constraint firstItem="2mO-cA-IPx" firstAttribute="top" secondItem="xlc-Jc-ILp" secondAttribute="top" constant="8" id="Y3A-eF-njG"/>
+                    <constraint firstItem="s4z-NK-Ebx" firstAttribute="top" secondItem="xlc-Jc-ILp" secondAttribute="top" constant="17" id="bSb-MA-Qaf"/>
+                    <constraint firstItem="2mO-cA-IPx" firstAttribute="leading" secondItem="xlc-Jc-ILp" secondAttribute="trailing" constant="13" id="kZI-lm-ivd"/>
+                    <constraint firstItem="s4z-NK-Ebx" firstAttribute="width" secondItem="2mO-cA-IPx" secondAttribute="width" constant="-25" id="lBf-6E-69w"/>
+                    <constraint firstItem="h1A-63-IfG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="okH-Tc-dM6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImgView" destination="xlc-Jc-ILp" id="p1q-dS-gw7"/>
+                <outlet property="msgLabel" destination="s4z-NK-Ebx" id="8NP-9H-KzX"/>
+                <outlet property="timeLabel" destination="h1A-63-IfG" id="NvP-9D-tuX"/>
+            </connections>
+            <point key="canvasLocation" x="152" y="87"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chat_recive_press_pic" width="35" height="24"/>
+    </resources>
+</document>
